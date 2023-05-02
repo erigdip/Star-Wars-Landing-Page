@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black-top-bottom);
+    height: 100px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 0 0 0 1rem;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-author {        
+        padding: 10px;
+        font-family: 'Star Wars', sans-serif;
+        color: var(--white);
+    }
+
+    .footer-social-media {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 250px;
+    }
+
+    .footer-social-media ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}

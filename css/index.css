@@ -1,0 +1,20 @@
+@import './nav-bar.css';
+@import './wrapper.css';
+@import './main-content.css';
+@import './characters.css';
+@import '/css/footer.css';
+
+:root {
+    --black-background: #202020;
+    --black-top-bottom: #0f0f0f;
+    --yellow: #eae32e;
+    --blue-background: #3984d6;
+    --red-background: #c1030a;
+    --white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black-top-bottom);
+}

@@ -1,0 +1,36 @@
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    background-color: var(--black-background);
+}
+
+.section-description {
+    padding: 20px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-title-name {
+    display: flex;
+    font-size: 2rem;
+    margin-right: 15px;
+}
+.section-title-name h1.title-name {
+    font-family: 'Star Wars', sans-serif;
+    color: var(--yellow);
+    border-right: 6px solid var(--yellow);
+    width: 320px;
+}
+.section-title-name h1.title-name span {
+    color: var(--white);
+}
+.section-paragraph {
+    height: 250px;
+    font-size: larger;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
