@@ -1,17 +1,47 @@
 .footer {
+    padding: 0 1rem 0 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--black-top-bottom);
     height: 100px;
 }
 
+.footer-logo {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-author {
+    font-family: 'Star Wars', sans-serif;
+    color: var(--white);
+    }
+
+.author p {
+    margin: 0 0 20px 0;
+}
+
+.author span {
+        color: var(--yellow);
+    }
+
+.footer-social-media ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
 @media (min-width: 768px) {
     .footer {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 100px;
-        padding: 0 0 0 1rem;
+        padding: 0 1rem 0 1rem;
     }
 
     .footer-logo {
@@ -19,22 +49,36 @@
         align-items: center;
     }
 
-    .footer-author {        
-        padding: 10px;
-        font-family: 'Star Wars', sans-serif;
-        color: var(--white);
+    .footer-author {
+        padding: 10px 20px 10px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .author {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .author p {
+        margin: 0;
     }
 
     .footer-social-media {
         display: flex;
-        align-items: center;
-        height: 100px;
         width: 250px;
+        align-content: flex-end;
+        flex-wrap: wrap;
     }
 
     .footer-social-media ul {
+        padding-left: 0;
         display: flex;
-        justify-content: space-between;
-        gap: 10px;
+        justify-content: flex-end;
+        gap: 15px;
+        align-items: center;
     }
 }

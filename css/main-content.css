@@ -1,36 +1,102 @@
 .main-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     border-radius: 15px;
     background-color: var(--black-background);
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner > img {
+    display: flex;
+    padding: 20px 20px 0 20px;
 }
 
 .section-description {
     padding: 20px;
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
 }
 
 .section-title-name {
-    display: flex;
+    font-family: 'Star Wars', sans-serif;
     font-size: 2rem;
-    margin-right: 15px;
+    color: var(--yellow);
+    border-bottom:  6px solid var(--yellow);
 }
 .section-title-name h1.title-name {
-    font-family: 'Star Wars', sans-serif;
-    color: var(--yellow);
-    border-right: 6px solid var(--yellow);
-    width: 320px;
+    margin: 0 0 10px 0;
 }
+
 .section-title-name h1.title-name span {
     color: var(--white);
 }
+
 .section-paragraph {
-    height: 250px;
-    font-size: larger;
+    margin: 10px 0 0 0;
+    font-size: 21px;
     color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.section-paragraph p {
+    margin: 0;
+}
+
+.section-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+h2.title-characters p {    
+    margin: 0;
+}
+
+.character-title h3.character-name {
+    font-size: 21px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .section-description {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .section-title-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        border-bottom: 0;
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+    .section-title-name h1.title-name {
+        display: flex;
+        flex-wrap: wrap;        
+        justify-content: center;
+        text-align: center;
+        font-family: 'Star Wars', sans-serif;
+        color: var(--yellow);
+        border-right: 6px solid var(--yellow);
+        width: 320px;
+    }
+    .section-title-name h1.title-name span {
+        display: flex;
+        color: var(--white);
+    }
+    .section-paragraph {
+        height: 250px;
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
