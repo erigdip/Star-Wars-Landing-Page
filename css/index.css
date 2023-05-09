@@ -2,7 +2,7 @@
 @import './wrapper.css';
 @import './main-content.css';
 @import './characters.css';
-@import './css/footer.css';
+@import './footer.css';
 
 :root {
     --black-background: #202020;
