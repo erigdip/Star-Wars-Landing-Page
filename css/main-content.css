@@ -22,7 +22,7 @@
 
 .section-description {
     max-width: 815px;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -80,7 +80,7 @@
 
 @media (min-width: 768px) {
     .section-description {
-        padding: 20px;
+        padding: 0 20px 20px 20px;
         display: flex;
         flex-direction: row;
     }

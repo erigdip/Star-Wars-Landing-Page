@@ -1,21 +1,32 @@
 .header {
-    padding: 0 1rem 0 1rem;
+    padding: 8px 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--black-top-bottom);
 }
 
+.header-logo > img {
+    border-radius: 15px;
+}
+
 ul.menu {
-    display: none;
+    width: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s linear;
 }
 
 /*toogle menu bar start*/
 .show ul.menu {
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+    transition-delay: 0s;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: center;
     height: 100px;
     width: 125px;
     position: absolute;
@@ -51,7 +62,7 @@ ul.menu {
         justify-content: space-between;
         background-color: var(--black-top-bottom);
         height: 100px;
-        padding: 0 1rem;
+        padding: 1rem;
     }
     .header-logo {
         display: flex;
@@ -65,14 +76,19 @@ ul.menu {
     }
 
     .header-nav ul.menu {
+        visibility: visible;
+        opacity: 1;
+        transition: 0s;
         list-style: none;
         width: inherit;
         display: flex;
         justify-content: space-between;
     }
+
     .header-menu {
         display: none;
     }
+
     .nav-ul-li > a {
         text-decoration: none;
         font-family: 'Star Wars', sans-serif;
