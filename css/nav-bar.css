@@ -11,10 +11,10 @@
 }
 
 ul.menu {
-    width: 10px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 0.5s linear;
+    position: absolute;
 }
 
 /*toogle menu bar start*/
@@ -76,6 +76,8 @@ ul.menu {
     }
 
     .header-nav ul.menu {
+        margin: 0;
+        padding: 0;
         visibility: visible;
         opacity: 1;
         transition: 0s;

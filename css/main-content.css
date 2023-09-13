@@ -6,6 +6,11 @@
     background-color: var(--black-background);
 }
 
+.summary-video {
+    visibility: hidden;
+    position: absolute;
+}
+
 .banner {
     min-width: 250px;
     max-width: fit-content;
@@ -13,6 +18,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .banner > img {
     width: 90%;
     height: 90%;
@@ -79,6 +85,17 @@
 }
 
 @media (min-width: 768px) {
+
+    .summary-video {
+        padding-top: 1rem;
+        visibility: visible;
+        position: relative;
+    }
+
+    .banner > img {
+        padding: 0;
+    }
+    
     .section-description {
         padding: 0 20px 20px 20px;
         display: flex;
